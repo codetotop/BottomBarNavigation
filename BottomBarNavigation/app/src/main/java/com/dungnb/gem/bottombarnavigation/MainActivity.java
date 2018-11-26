@@ -105,4 +105,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     transaction.commit();
   }
 
+  public void addChildFragment(Fragment fragment){
+    addFragmentTransaction(fragment,null,true,fragment.getClass().getSimpleName());
+  }
+
+  private void addFragmentTransaction(Fragment fragment, Bundle bundle, boolean addToBackStack, String tag) {
+    FragmentManager fragmentManager = getSupportFragmentManager();
+    FragmentTransaction transaction = fragmentManager.beginTransaction();
+    transaction.setCustomAnimations(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+    transaction.add(R.id.container, fragment, tag);
+    if (addToBackStack)
+      transaction.addToBackStack(fragment.getClass().getSimpleName());
+    transaction.commit();
+  }
+
 }

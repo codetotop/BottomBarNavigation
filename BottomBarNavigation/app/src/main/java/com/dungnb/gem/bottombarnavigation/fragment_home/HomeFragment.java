@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.dungnb.gem.bottombarnavigation.Constant;
+import com.dungnb.gem.bottombarnavigation.MainActivity;
 import com.dungnb.gem.bottombarnavigation.R;
 
 public class HomeFragment extends Fragment {
@@ -39,6 +40,17 @@ public class HomeFragment extends Fragment {
     Bundle bundle = getArguments();
     this.name = bundle.getString(Constant.NAME);
     this.tvName.setText(this.name);
+    addEvents();
     return view;
+  }
+
+  private void addEvents() {
+    tvName.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        MainActivity activity = (MainActivity) getActivity();
+        activity.addChildFragment(newInstance("Home Child"));
+      }
+    });
   }
 }
