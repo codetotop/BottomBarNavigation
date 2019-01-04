@@ -13,8 +13,8 @@ import com.dungnb.gem.bottombarnavigation.Constant;
 import com.dungnb.gem.bottombarnavigation.R;
 
 public class ShopFragment extends Fragment {
-  private static String name;
-  private static TextView tvName;
+  private  String name;
+  private  TextView tvName;
   public static ShopFragment mInstance;
 
   public static ShopFragment newInstance(String name) {
@@ -27,7 +27,9 @@ public class ShopFragment extends Fragment {
     return fragment;
   }
 
-  public static ShopFragment getmInstance() {
+  public static ShopFragment getmInstance(String name) {
+    if(mInstance==null)
+      newInstance(name);
     return mInstance;
   }
   @Nullable

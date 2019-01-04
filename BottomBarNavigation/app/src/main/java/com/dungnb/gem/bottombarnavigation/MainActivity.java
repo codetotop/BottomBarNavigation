@@ -53,22 +53,22 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
   private void handleNavigationSelected(int itemId) {
     switch (itemId) {
       case R.id.tabHome:
-        addOrShowFragment(HomeFragment.newInstance("Tab Home"), null, false, String.valueOf(R.id.tabHome));
+        addOrShowFragment(HomeFragment.getmInstance("Tab Home"), null, false, String.valueOf(R.id.tabHome));
         break;
       case R.id.tabShop:
-        addOrShowFragment(ShopFragment.newInstance("Tab Shop"), null, false, String.valueOf(R.id.tabShop));
+        addOrShowFragment(ShopFragment.getmInstance("Tab Shop"), null, false, String.valueOf(R.id.tabShop));
         break;
       case R.id.tabMail:
-        addOrShowFragment(MailFragment.newInstance("Tab Mail"), null, false, String.valueOf(R.id.tabMail));
+        addOrShowFragment(MailFragment.getmInstance("Tab Mail"), null, false, String.valueOf(R.id.tabMail));
         break;
       case R.id.tabSocial:
-        addOrShowFragment(SocialFragment.newInstance("Tab Social"), null, false, String.valueOf(R.id.tabSocial));
+        addOrShowFragment(SocialFragment.getmInstance("Tab Social"), null, false, String.valueOf(R.id.tabSocial));
         break;
       case R.id.tabSetting:
-        addOrShowFragment(SettingFragment.newInstance("Tab Setting"), null, false, String.valueOf(R.id.tabSetting));
+        addOrShowFragment(SettingFragment.getmInstance("Tab Setting"), null, false, String.valueOf(R.id.tabSetting));
         break;
       default:
-        addOrShowFragment(HomeFragment.newInstance("Tab Home"), null, false, String.valueOf(R.id.tabHome));
+        addOrShowFragment(HomeFragment.getmInstance("Tab Home"), null, false, String.valueOf(R.id.tabHome));
         break;
     }
   }
@@ -105,14 +105,14 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     transaction.commit();
   }
 
-  public void addChildFragment(Fragment fragment){
-    addFragmentTransaction(fragment,null,true,fragment.getClass().getSimpleName());
+  public void addChildFragment(Fragment fragment) {
+    addFragmentTransaction(fragment, null, true, fragment.getClass().getSimpleName());
   }
 
   private void addFragmentTransaction(Fragment fragment, Bundle bundle, boolean addToBackStack, String tag) {
     FragmentManager fragmentManager = getSupportFragmentManager();
     FragmentTransaction transaction = fragmentManager.beginTransaction();
-    transaction.setCustomAnimations(android.R.anim.slide_in_left,android.R.anim.slide_out_right);
+    transaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
     transaction.add(R.id.container, fragment, tag);
     if (addToBackStack)
       transaction.addToBackStack(fragment.getClass().getSimpleName());

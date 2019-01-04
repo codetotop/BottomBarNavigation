@@ -27,7 +27,9 @@ public class SocialFragment extends Fragment {
     return fragment;
   }
 
-  public static SocialFragment getmInstance() {
+  public static SocialFragment getmInstance(String name) {
+    if(mInstance==null)
+      newInstance(name);
     return mInstance;
   }
 

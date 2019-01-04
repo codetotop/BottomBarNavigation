@@ -14,8 +14,8 @@ import com.dungnb.gem.bottombarnavigation.MainActivity;
 import com.dungnb.gem.bottombarnavigation.R;
 
 public class HomeFragment extends Fragment {
-  private static String name;
-  private static TextView tvName;
+  private  String name;
+  private  TextView tvName;
   public static HomeFragment mInstance;
 
   public static HomeFragment newInstance(String name) {
@@ -28,7 +28,9 @@ public class HomeFragment extends Fragment {
     return fragment;
   }
 
-  public static HomeFragment getmInstance() {
+  public static HomeFragment getmInstance(String name) {
+    if (mInstance == null)
+      newInstance(name);
     return mInstance;
   }
 

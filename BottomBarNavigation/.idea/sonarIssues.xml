@@ -168,6 +168,36 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/../MvpProject/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MvpProject/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MvpProject/app/src/main/java/com/dungnb/gem/mvpproject/LoginActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MvpProject/app/src/main/java/com/dungnb/gem/mvpproject/screen/login/LoginActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MvpProject/app/src/main/res/layout/activity_login.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MvpProject/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/../TabLayout/app/src/main/res/layout/activity_main.xml">
           <value>
             <set />

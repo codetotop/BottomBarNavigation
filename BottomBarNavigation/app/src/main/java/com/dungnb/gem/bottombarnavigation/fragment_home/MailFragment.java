@@ -13,8 +13,8 @@ import com.dungnb.gem.bottombarnavigation.Constant;
 import com.dungnb.gem.bottombarnavigation.R;
 
 public class MailFragment extends Fragment {
-  private static String name;
-  private static TextView tvName;
+  private  String name;
+  private  TextView tvName;
   public static MailFragment mInstance;
 
   public static MailFragment newInstance(String name) {
@@ -27,9 +27,12 @@ public class MailFragment extends Fragment {
     return fragment;
   }
 
-  public static MailFragment getmInstance() {
+  public static MailFragment getmInstance(String name) {
+    if (mInstance == null)
+      newInstance(name);
     return mInstance;
   }
+
   @Nullable
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
