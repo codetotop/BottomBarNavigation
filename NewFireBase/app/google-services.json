@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1043303825814",
+    "firebase_url": "https://demo2019-1acd3.firebaseio.com",
+    "project_id": "demo2019-1acd3",
+    "storage_bucket": "demo2019-1acd3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043303825814:android:b7bca65507f3b25d",
+        "android_client_info": {
+          "package_name": "com.dungnb.gem.newfirebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043303825814-4is7r6hthdo0lb69jv0gig81rg83k962.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsE_SEREgpfITLEa6_zQtUQyVOTYSNdls"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
