@@ -1,5 +1,0 @@
-<resources>
-    <string name="app_name">New Firebase Demo</string>
-    <string name="save_data_suggest">\"Lưu thành công !\"</string>
-    <string name="save_data_error">Lưu thất bại !</string>
-</resources>
