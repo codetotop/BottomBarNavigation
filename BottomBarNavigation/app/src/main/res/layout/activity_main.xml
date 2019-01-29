@@ -13,11 +13,17 @@
         app:layout_constraintBottom_toTopOf="@id/bottomBar"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/colorGray"
+        app:layout_constraintBottom_toTopOf="@id/bottomBar" />
+
     <android.support.design.widget.BottomNavigationView
         android:id="@+id/bottomBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorRed"
+        android:background="@color/colorPrimary"
         app:itemIconTint="@color/bg_item_bottombar"
         app:itemTextColor="@color/bg_item_bottombar"
         app:labelVisibilityMode="labeled"

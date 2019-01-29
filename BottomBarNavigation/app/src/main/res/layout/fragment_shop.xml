@@ -7,11 +7,10 @@
         android:id="@+id/tvShopName"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
         android:fontFamily="monospace"
         android:gravity="center"
         android:text="@string/shop"
-        android:textColor="@color/colorWhite"
+        android:textColor="@color/colorPrimary"
         android:textStyle="bold" />
 
 </android.support.constraint.ConstraintLayout>
